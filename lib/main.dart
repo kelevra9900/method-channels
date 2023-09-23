@@ -31,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final MethodChannel _platformVersionChannel =
       const MethodChannel('com.example/platform_version');
-  final MethodChannel dataChannel = MethodChannel('com.example/data_channel');
+  final MethodChannel dataChannel = const MethodChannel('com.example/data_channel');
   Future<void> _showPlatformVersion(BuildContext ctx) async {
     try {
       final platformVersion =
